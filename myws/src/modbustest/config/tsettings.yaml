@@ -1,0 +1,7 @@
+modbus: {baud: 19200, port: /dev/ttyUSB1, timeout: 10,
+read_holding_registers_slaveids: [104],
+read_holding_registers_count: [8],
+read_holding_registers_start_address: [0],
+read_input_registers_slaveids: [104],
+read_input_registers_count: [8],
+read_input_registers_start_address: [1000]}

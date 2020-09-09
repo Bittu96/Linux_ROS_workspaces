@@ -1,0 +1,14 @@
+digraph G {
+node [shape=box];
+"chassis" [label="chassis"];
+"imu" [label="imu"];
+"left_wheel" [label="left_wheel"];
+"right_wheel" [label="right_wheel"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"chassis" -> "imu_joint" [label="xyz: 0 0 0.2 \nrpy: 0 -0 0"]
+"imu_joint" -> "imu"
+"chassis" -> "left_wheel_hinge" [label="xyz: 0 0.15 -0.2 \nrpy: 0 -0 0"]
+"left_wheel_hinge" -> "left_wheel"
+"chassis" -> "right_wheel_hinge" [label="xyz: 0 -0.15 -0.2 \nrpy: 0 -0 0"]
+"right_wheel_hinge" -> "right_wheel"
+}

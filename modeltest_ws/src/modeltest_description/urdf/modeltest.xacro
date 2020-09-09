@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+
+<robot name="modeltest" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+  <xacro:include filename="$(find modeltest_description)/urdf/modeltest.gazebo" />
+  <xacro:include filename="$(find modeltest_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find modeltest_description)/urdf/macros.xacro" />
+<visual name="visual">
+  <pose>0 0 0 1.5708 0 0</pose>
+  <geometry>
+    <mesh><uri>file://duck.dae</uri></mesh>
+  </geometry>
+</visual>
+
+</robot>

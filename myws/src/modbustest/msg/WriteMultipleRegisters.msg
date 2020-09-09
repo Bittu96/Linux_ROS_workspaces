@@ -1,0 +1,4 @@
+uint16 slaveid
+uint16 write_multiple_registers_count
+uint16 write_multiple_registers_start_address
+uint16[] write_multiple_registers
